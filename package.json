@@ -2,11 +2,12 @@
     "name": "apex",
     "displayName": "Apex",
     "description": "Salesforce Apex",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "JohnAaronNelson",
     "engines": {
         "vscode": "^0.10.6"
     },
+    "icon": "images/salesforce_logo.png",
     "categories": [
         "Languages"
     ],
