@@ -1,2 +1,2 @@
 # Apex Syntax highlighting
-![Alt text](images/example.png "Hello World")
+![Example Syntax highlightning](https://github.com/Celador/vscode-apex-extension/raw/master/images/example.png "Hello World")
