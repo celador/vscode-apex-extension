@@ -1365,7 +1365,7 @@
             <array>
                 <dict>
                     <key>match</key>
-                    <string>\b(?:void|blob|boolean|date|datetime|decimal|double|ID|integer|long|Object|string|time)(\[\])*\b</string>
+                    <string>\b(?:void|testmethod|blob|boolean|date|datetime|decimal|double|ID|integer|long|Object|string|time)(\[\])*\b</string>
                     <key>name</key>
                     <string>storage.type.primitive.array.apex</string>
                 </dict>
@@ -1377,7 +1377,7 @@
             <array>
                 <dict>
                     <key>match</key>
-                    <string>\b(?:void|blob|boolean|date|datetime|decimal|double|ID|integer|long|Object|string|time)\b</string>
+                    <string>\b(?:void|testmethod|blob|boolean|date|datetime|decimal|double|ID|integer|long|Object|string|time)\b</string>
                     <key>name</key>
                     <string>storage.type.primitive.apex</string>
                 </dict>
@@ -1394,7 +1394,7 @@
                 </dict>
             </dict>
             <key>match</key>
-            <string>\b(global|public|private|protected|static|final|native|synchronized|abstract|threadsafe|transient)\b</string>
+            <string>\b(global|public|with sharing|without sharing|private|protected|static|final|native|synchronized|abstract|threadsafe|transient)\b</string>
         </dict>
         <key>strings</key>
         <dict>
@@ -1520,16 +1520,16 @@
                     <key>begin</key>
                     <string>(?x:(?=
                         (?:
-                            (?:private|protected|public|global|native|synchronized|abstract|threadsafe|transient|static|final) # visibility/modifier
+                            (?:private|protected|public|with sharing|without sharing|global|native|synchronized|abstract|threadsafe|transient|static|final) # visibility/modifier
                                 |
                             (?:def)
                                 |
-                            (?:void|blob|boolean|date|datetime|decimal|double|ID|integer|long|Object|string|time)
+                            (?:void|testmethod|blob|boolean|date|datetime|decimal|double|ID|integer|long|Object|string|time)
                                 |
                             (?:(?:[a-z]\w*\.)*[A-Z]+\w*) # object type
                         )
                         \s+
-                        (?!private|protected|public|global|native|synchronized|abstract|threadsafe|transient|static|final|def|void|blob|boolean|date|datetime|decimal|double|ID|integer|long|Object|string|time)
+                        (?!private|protected|public|with sharing|without sharing|global|native|synchronized|abstract|threadsafe|transient|static|final|def|void|testmethod|blob|boolean|date|datetime|decimal|double|ID|integer|long|Object|string|time)
                         [\w\d_&lt;&gt;\[\],\?][\w\d_&lt;&gt;\[\],\? \t]*
                         (?:=|$)
 
