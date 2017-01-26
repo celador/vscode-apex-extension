@@ -2,7 +2,7 @@
     "name": "apex",
     "displayName": "Apex",
     "description": "Salesforce Apex Syntax",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "JohnAaronNelson",
     "engines": {
         "vscode": "1.8.0"
