@@ -1,13 +1,13 @@
 {
     "name": "apex",
     "displayName": "Apex",
-    "description": "Salesforce Apex",
-    "version": "0.0.2",
+    "description": "Salesforce Apex Syntax",
+    "version": "1.0.0",
     "publisher": "JohnAaronNelson",
     "engines": {
-        "vscode": "^0.10.6"
+        "vscode": "1.8.0"
     },
-    "icon": "images/salesforce_logo.png",
+    "icon": "images/new-logo.png",
     "categories": [
         "Languages"
     ],
